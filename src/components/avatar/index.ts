@@ -1,4 +1,4 @@
-import Avatar from './avatar.vue'
+import Avatar from './Avatar.vue'
 import { App } from 'vue'
 
 Avatar.install = (Vue: App) => {

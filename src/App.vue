@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 </script>
 <template>
+  <router-link to="/demo/avatar">avatar</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <div>
     <router-view></router-view>
