@@ -8,7 +8,7 @@
   </span>
 </template>
 <script lang="ts">
-import { computed, defineComponent, onBeforeMount, onMounted, onUpdated, PropType, ref, toRefs, watch } from 'vue'
+import { computed, defineComponent, getCurrentInstance, onBeforeMount, onMounted, onUpdated, PropType, ref, toRefs, watch } from 'vue'
 import Icon from '../icon/'
 
 const prefixClass = 'ivu-avatar'
@@ -88,9 +88,11 @@ export default defineComponent({
       isSlotShow.value = !src?.value && !icon?.value
 
       if (children.value) {
+        const ins = getCurrentInstance()
+
         // set children width again to make slot centered
         childrenWidth.value = (children.value! as HTMLElement).offsetWidth
-        const avatarWidth = (children.value! as HTMLElement).getBoundingClientRect().width
+        const avatarWidth = (ins.ctx.$el! as HTMLElement).getBoundingClientRect().width
         // add 4px gap for each side to get better performance
         if (avatarWidth - 8 < childrenWidth.value) {
           scale.value = (avatarWidth - 8) / childrenWidth.value
