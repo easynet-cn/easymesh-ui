@@ -110,7 +110,7 @@ export default defineComponent({
     })
 
     onBeforeMount(() => {
-      slotTemp.value = ctx.slots.default ? ctx.slots.default : null
+      slotTemp.value = ctx.slots.default ? ctx.slots.default() : null
     })
 
     onMounted(() => {
@@ -118,8 +118,8 @@ export default defineComponent({
     })
 
     onUpdated(() => {
-      if (ctx.slots.default !== slotTemp.value) {
-        slotTemp.value = ctx.slots.default!
+      if (ctx.slots.default && ctx.slots.default() !== slotTemp.value) {
+        slotTemp.value = ctx.slots.default()
 
         setScale()
       }
