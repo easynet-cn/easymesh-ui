@@ -6,7 +6,9 @@
         </Badge>
         <Badge>
             <a href="#" class="demo-badge" style="margin-left: 32px"></a>
-            <Icon type="md-time" slot="count" color="#ed4014" size="16" />
+            <template v-slot:count>
+                <Icon type="md-time" color="#ed4014" size="16" />
+            </template>
         </Badge>
     </div>
     <div>
