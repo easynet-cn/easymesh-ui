@@ -2,6 +2,7 @@ import Avatar from "/demo/Avatar.vue"
 import Badge from "/demo/Badge.vue"
 import Breadcrumb from "/demo/Breadcrumb.vue"
 import Icon from "/demo/Icon.vue"
+import Affix from "/demo/Affix.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     path: "/demo/icon",
     name: "icon",
     component: Icon
+  },
+  {
+    path: "/demo/affix",
+    name: "affix",
+    component: Affix
   }
 ]
 
