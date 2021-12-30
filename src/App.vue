@@ -5,6 +5,7 @@
 <template>
   <router-link to="/demo/avatar">avatar</router-link>
   <router-link to="/demo/badge">badge</router-link>
+   <router-link to="/demo/breadcrumb">breadcrumb</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <div>
     <router-view></router-view>
