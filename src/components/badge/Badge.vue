@@ -99,14 +99,14 @@ export default defineComponent({
       return [
         `${prefixCls}-status-dot`,
         {
-          [`${prefixCls}-status-${status?.value}`]: status?.value,
-          [`${prefixCls}-status-${color?.value}`]: !!color?.value
+          [`${prefixCls}-status-${status?.value}`]: !!status?.value,
+          [`${prefixCls}-status-${color?.value}`]: !!color?.value && initColorList.includes(color?.value)
         }
       ]
     })
 
     const statusStyles = computed(() => {
-      return color?.value && initColorList.includes(color?.value) ? { backgroundColor: color?.value } : {}
+      return color?.value && initColorList.includes(color?.value) ? {} : { backgroundColor: color?.value }
     })
 
     const styles = computed(() => {

@@ -25,4 +25,7 @@
   font-size: 14px;
   line-height: 1.5;
 }
+#app a {
+  padding-left: 10px;
+}
 </style>
