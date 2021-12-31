@@ -1,4 +1,5 @@
 import Avatar from "/demo/Avatar.vue"
+import BackTop from "/demo/BackTop.vue"
 import Badge from "/demo/Badge.vue"
 import Breadcrumb from "/demo/Breadcrumb.vue"
 import Icon from "/demo/Icon.vue"
@@ -10,6 +11,11 @@ const routes = [
     path: "/demo/avatar",
     name: "avatar",
     component: Avatar
+  },
+  {
+    path: "/demo/back-top",
+    name: "back-top",
+    component: BackTop
   },
   {
     path: "/demo/badge",
