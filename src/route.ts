@@ -2,6 +2,7 @@ import Avatar from "/demo/Avatar.vue"
 import BackTop from "/demo/BackTop.vue"
 import Badge from "/demo/Badge.vue"
 import Breadcrumb from "/demo/Breadcrumb.vue"
+import Button from "/demo/Button.vue"
 import Icon from "/demo/Icon.vue"
 import Affix from "/demo/Affix.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
@@ -26,6 +27,11 @@ const routes = [
     path: "/demo/breadcrumb",
     name: "breadcrumb",
     component: Breadcrumb
+  },
+  {
+    path: "/demo/button",
+    name: "button",
+    component: Button
   },
   {
     path: "/demo/icon",

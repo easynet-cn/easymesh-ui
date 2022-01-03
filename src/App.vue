@@ -7,6 +7,7 @@
   <router-link to="/demo/back-top">back-top</router-link>
   <router-link to="/demo/badge">badge</router-link>
   <router-link to="/demo/breadcrumb">breadcrumb</router-link>
+  <router-link to="/demo/button">button</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <router-link to="/demo/affix">affix</router-link>
   <div>
