@@ -1,19 +1,19 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 // scrollTop animation
-export const scrollTop = function (el: Element|Window, from = 0, to: number, duration = 500, endCallback?: Function): void {
+export const scrollTop = function (el: Element | Window, from = 0, to: number, duration = 500, endCallback?: Function): void {
   if (!window.requestAnimationFrame) {
     window.requestAnimationFrame = (
-      window.webkitRequestAnimationFrame ||
-            function (callback) {
-              return window.setTimeout(callback, 1000 / 60)
-            }
+      (window as any).webkitRequestAnimationFrame ||
+      function (callback) {
+        return window.setTimeout(callback, 1000 / 60)
+      }
     )
   }
 
   const difference = Math.abs(from - to)
   const step = Math.ceil(difference / duration * 50)
 
-  function scroll (start: number, end: number, step: number) {
+  function scroll(start: number, end: number, step: number) {
     if (start === end) {
       endCallback && endCallback()
       return
@@ -100,14 +100,14 @@ export const dimensionMap = {
   xxl: '1600px'
 }
 
-export function setMatchMedia () {
+export function setMatchMedia() {
   if (typeof window !== 'undefined') {
     const matchMediaPolyfill = (mediaQuery: any) => {
       return {
         media: mediaQuery,
         matches: false,
-        on () {},
-        off () {}
+        on() { },
+        off() { }
       }
     }
     window.matchMedia = window.matchMedia || matchMediaPolyfill

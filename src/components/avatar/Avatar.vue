@@ -88,7 +88,7 @@ export default defineComponent({
       isSlotShow.value = !src?.value && !icon?.value
 
       if (children.value) {
-        const ins = getCurrentInstance()
+        const ins = getCurrentInstance() as any
 
         // set children width again to make slot centered
         childrenWidth.value = (children.value! as HTMLElement).offsetWidth
