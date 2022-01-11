@@ -10,6 +10,7 @@
   <router-link to="/demo/breadcrumb">breadcrumb</router-link>
   <router-link to="/demo/button">button</router-link>
   <router-link to="/demo/card">card</router-link>
+  <router-link to="/demo/circle">circle</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <div>
     <router-view></router-view>
