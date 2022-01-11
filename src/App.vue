@@ -11,6 +11,7 @@
   <router-link to="/demo/button">button</router-link>
   <router-link to="/demo/card">card</router-link>
   <router-link to="/demo/circle">circle</router-link>
+  <router-link to="/demo/divider">divider</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <div>
     <router-view></router-view>

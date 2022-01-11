@@ -6,6 +6,7 @@ import Breadcrumb from "/demo/Breadcrumb.vue"
 import Button from "/demo/Button.vue"
 import Card from "/demo/Card.vue"
 import Circle from "/demo/Circle.vue"
+import Divider from "/demo/Divider.vue"
 import Icon from "/demo/Icon.vue"
 
 import { createRouter, createWebHashHistory } from "vue-router"
@@ -50,6 +51,11 @@ const routes = [
     path: "/demo/circle",
     name: "circle",
     component: Circle
+  },
+  {
+    path: "/demo/divider",
+    name: "divider",
+    component: Divider
   },
   {
     path: "/demo/icon",
