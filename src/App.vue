@@ -14,6 +14,7 @@
   <router-link to="/demo/divider">divider</router-link>
   <router-link to="/demo/icon">icon</router-link>
   <router-link to="/demo/list">list</router-link>
+  <router-link to="/demo/tag">tag</router-link>
   <div>
     <router-view></router-view>
   </div>

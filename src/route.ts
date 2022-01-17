@@ -9,6 +9,7 @@ import Circle from "/demo/Circle.vue"
 import Divider from "/demo/Divider.vue"
 import Icon from "/demo/Icon.vue"
 import List from "/demo/List.vue"
+import Tag from "/demo/Tag.vue"
 
 import { createRouter, createWebHashHistory } from "vue-router"
 
@@ -67,6 +68,11 @@ const routes = [
     path: "/demo/list",
     name: "list",
     component: List
+  },
+  {
+    path: "/demo/tag",
+    name: "tag",
+    component: Tag
   }
 ]
 
