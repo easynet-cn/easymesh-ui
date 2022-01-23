@@ -8,6 +8,7 @@ import Card from "/demo/Card.vue"
 import Circle from "/demo/Circle.vue"
 import Divider from "/demo/Divider.vue"
 import Icon from "/demo/Icon.vue"
+import Layout from "/demo/Layout.vue"
 import List from "/demo/List.vue"
 import Tag from "/demo/Tag.vue"
 
@@ -63,6 +64,11 @@ const routes = [
     path: "/demo/icon",
     name: "icon",
     component: Icon
+  },
+  {
+    path: "/demo/layout",
+    name: "laytout",
+    component: Layout
   },
   {
     path: "/demo/list",
