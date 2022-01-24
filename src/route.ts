@@ -7,6 +7,7 @@ import Button from "/demo/Button.vue"
 import Card from "/demo/Card.vue"
 import Circle from "/demo/Circle.vue"
 import Divider from "/demo/Divider.vue"
+import Grid from "/demo/Grid.vue"
 import Icon from "/demo/Icon.vue"
 import Layout from "/demo/Layout.vue"
 import List from "/demo/List.vue"
@@ -59,6 +60,11 @@ const routes = [
     path: "/demo/divider",
     name: "divider",
     component: Divider
+  },
+  {
+    path: "/demo/grid",
+    name: "grid",
+    component: Grid
   },
   {
     path: "/demo/icon",
